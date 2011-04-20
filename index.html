@@ -1,0 +1,244 @@
+<!doctype html> 
+<html lang=en-us manifest="cache.manifest.php">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+
+<!--
+
+    
+      ___                 
+     /\  \                
+     \:\  \       ___     
+      \:\  \     /\__\    
+  ___ /::\  \   /:/__/    
+ /\  /:/\:\__\ /::\  \    
+ \:\/:/  \/__/ \/\:\  \__ 
+  \::/__/       ~~\:\/\__\
+   \:\  \          \::/  /
+    \:\__\         /:/  / 
+     \/__/         \/__/  
+                    ___           ___           ___           ___     
+                   /\  \         /\__\         /\  \         /\__\    
+      ___          \:\  \       /:/ _/_       /::\  \       /:/ _/_   
+     /\__\          \:\  \     /:/ /\__\     /:/\:\__\     /:/ /\__\  
+    /:/  /      ___ /::\  \   /:/ /:/ _/_   /:/ /:/  /    /:/ /:/ _/_ 
+   /:/__/      /\  /:/\:\__\ /:/_/:/ /\__\ /:/_/:/__/___ /:/_/:/ /\__\
+  /::\  \      \:\/:/  \/__/ \:\/:/ /:/  / \:\/:::::/  / \:\/:/ /:/  /
+ /:/\:\  \      \::/__/       \::/_/:/  /   \::/~~/~~~~   \::/_/:/  / 
+ \/__\:\  \      \:\  \        \:\/:/  /     \:\~~\        \:\/:/  /  
+      \:\__\      \:\__\        \::/  /       \:\__\        \::/  /   
+       \/__/       \/__/         \/__/         \/__/         \/__/    
+  
+  
+
+  
+    I'm a front-end developer who just enjoys coding.
+
+    In case you want to take a look at my other projects you can find them at:
+     
+     http://github.com/nestoralvaro
+  
+                                                            - Nestor. April 10th, 2011
+
+    Credits for this header:
+    Text's ascii art from: http://www.network-science.de/ascii/
+    Text inspired by the one seen at http://paulirish.com/
+
+--> 
+ 
+	<title>PokerHelper</title>
+	<meta name="title" content="PokerHelper" /> 
+	<meta name="description" content="PokerHelper" /> 
+	<meta name="keywords" content="PokerHelper" /> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" href="./images/iphone/touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="./images/iphone/touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="./images/iphone/touch-icon-iphone4.png" />
+	<link rel="apple-touch-startup-image" href="./images/iphone/startup.png">
+
+    <link href="./css/cards.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/add2home.css" rel="stylesheet" type="text/css"/>
+	
+	<link rel="shortcut icon" href="./images/favicon.ico" />
+
+    <!-- testing -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+
+    <!-- analytics code -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22646689-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- analytics code -->
+
+</head>
+<body>
+    <h1>Poker Helper</h1>
+    <div class="scroller">
+        <div class="suit cleaner">
+            <div id="SA" class="card leftFloat" ></div>
+            <div id="SK" class="card leftFloat" ></div>
+            <div id="SQ" class="card leftFloat" ></div>
+            <div id="SJ" class="card leftFloat" ></div>
+            <div id="ST" class="card leftFloat" ></div>
+            <div id="S9" class="card leftFloat" ></div>
+            <div id="S8" class="card leftFloat" ></div>
+            <div id="S7" class="card leftFloat" ></div>
+            <div id="S6" class="card leftFloat" ></div>
+            <div id="S5" class="card leftFloat" ></div>
+            <div id="S4" class="card leftFloat" ></div>
+            <div id="S3" class="card leftFloat" ></div>
+            <div id="S2" class="card leftFloat" ></div>
+        </div><!-- suit -->
+        <br/>
+        <div class="suit cleaner">
+            <div id="HA" class="card leftFloat" ></div>
+            <div id="HK" class="card leftFloat" ></div>
+            <div id="HQ" class="card leftFloat" ></div>
+            <div id="HJ" class="card leftFloat" ></div>
+            <div id="HT" class="card leftFloat" ></div>
+            <div id="H9" class="card leftFloat" ></div>
+            <div id="H8" class="card leftFloat" ></div>
+            <div id="H7" class="card leftFloat" ></div>
+            <div id="H6" class="card leftFloat" ></div>
+            <div id="H5" class="card leftFloat" ></div>
+            <div id="H4" class="card leftFloat" ></div>
+            <div id="H3" class="card leftFloat" ></div>
+            <div id="H2" class="card leftFloat" ></div>
+        </div><!-- suit -->
+        <br/>
+        <div class="suit cleaner">
+            <div id="DA" class="card leftFloat" ></div>
+            <div id="DK" class="card leftFloat" ></div>
+            <div id="DQ" class="card leftFloat" ></div>
+            <div id="DJ" class="card leftFloat" ></div>
+            <div id="DT" class="card leftFloat" ></div>
+            <div id="D9" class="card leftFloat" ></div>
+            <div id="D8" class="card leftFloat" ></div>
+            <div id="D7" class="card leftFloat" ></div>
+            <div id="D6" class="card leftFloat" ></div>
+            <div id="D5" class="card leftFloat" ></div>
+            <div id="D4" class="card leftFloat" ></div>
+            <div id="D3" class="card leftFloat" ></div>
+            <div id="D2" class="card leftFloat" ></div>
+        </div><!-- suit -->
+        <br/>
+        <div class="suit cleaner">
+            <div id="CA" class="card leftFloat" ></div>
+            <div id="CK" class="card leftFloat" ></div>
+            <div id="CQ" class="card leftFloat" ></div>
+            <div id="CJ" class="card leftFloat" ></div>
+            <div id="CT" class="card leftFloat" ></div>
+            <div id="C9" class="card leftFloat" ></div>
+            <div id="C8" class="card leftFloat" ></div>
+            <div id="C7" class="card leftFloat" ></div>
+            <div id="C6" class="card leftFloat" ></div>
+            <div id="C5" class="card leftFloat" ></div>
+            <div id="C4" class="card leftFloat" ></div>
+            <div id="C3" class="card leftFloat" ></div>
+            <div id="C2" class="card leftFloat" ></div>
+        </div><!-- suit -->
+    </div> <!-- scroller -->
+
+     <br/>
+        <div id="OptionsDiv">
+            <div class="leftFloat settingsImage" onclick="toggleOptions()" ><img src="./images/settings.png" alt="settings" title="settings" /></div>
+            <div id="optionsTitle" onclick="toggleOptions()" class="boldFont">Click to show the options menu</div>
+            <div id="optionsForm" class="noShow cleaner">
+                <div class="leftFloat" id="divMyPos">Your current position (0 = dealer): </div>
+                <div>
+                    <input type="text" id="inputMyPos" name="inputMyPos" placeholder="0" onkeypress="return isNumberKey(event)" size="3" />
+                </div>
+                <div class="leftFloat" id="divNoOps">Number of oponents: </div>
+                <div>
+                    <input type="text" id="inputNumberOps" name="inputNumberOps" placeholder="5" onkeypress="return isNumberKey(event)" size="3" />
+                </div>
+                <div class="leftFloat" id="divNumberBB">Number of Big blinds you have: </div>
+                <div>
+                    <input type="text" id="inputNumberBB" name="inputNumberBB" placeholder="24" onkeypress="return isNumberKey(event)" size="3" />
+                </div>
+                <div><!-- radio buttons start -->
+                    <div class="leftFloat" id="radioLooseModeOff">Loose mode Off (tight mode): </div>
+                    <div>
+                        <input type="radio" name="looseMode" value="false" checked="checked" />
+                    </div>
+                    <div class="leftFloat cleaner" id="radioLooseModeOn">Loose mode ON: </div>
+                    <div> 
+                        <input type="radio" name="looseMode" value="true" /> 
+                    </div>
+                </div><!-- radio buttons end -->
+                <div class="cleaner">
+                    <img src="./images/es.png" alt="es" title="es" onclick="setLanguage('es')"/>
+                    <img src="./images/en.png" alt="en" title="en" onclick="setLanguage('en')"/>
+                </div>
+                <input id="updateOptions" class="buttonDo" type="button" value="Update Options!" onclick="updateOptions()"/>
+            </div>
+        </div><!-- Options -->
+        <br/>
+        <div id="msgLog" class="cleaner">
+        </div>
+        <br/>
+        <div id="RiverDiv" class="cleaner">
+            <div id="river0" class="leftFloat" ></div>
+            <div id="calculateRiver" class="noShow" >
+                <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateRiver()"/>
+            </div>
+            <div id="percentajesRiver" class="noShow leftFloat" ></div>
+            <div id="goStart" class="noShow leftFloat" >
+                <input class="buttonDo" id="buttonGoStart" type="button" value="Start a new hand!" onclick="goToPhase('preflop')"/>
+            </div>
+        </div><!-- RiverDiv -->
+
+        <div id="TurnDiv" class="cleaner">
+            <div id="turn0" class="leftFloat" ></div>
+            <div id="calculateTurn" class="noShow" >
+                <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateTurn()"/>
+            </div>
+            <div id="percentajesTurn" class="noShow leftFloat" ></div>
+            <div id="goRiver" class="noShow leftFloat" >
+                <input class="buttonDo" id="buttonGoRiver" type="button" value="Go to River!" onclick="goToPhase('river')"/>
+            </div>
+        </div><!-- TurnDiv -->
+
+        <div id="flopDiv" class="cleaner">
+            <div id="flop0" class="leftFloat" ></div>
+            <div id="flop1" class="leftFloat" ></div>
+            <div id="flop2" class="leftFloat" ></div>
+            <div id="calculateFlop" class="noShow" >
+                <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateFlop()"/>
+            </div>
+            <div id="percentajesFlop" class="noShow leftFloat" ></div>
+            <div id="goTurn" class="noShow leftFloat" >
+                <input class="buttonDo" id="buttonGoTurn" type="button" value="Go to Turn!" onclick="goToPhase('turn')"/>
+            </div>
+        </div><!-- flopDiv -->
+
+        <div id="preFlopDiv" class="cleaner">
+            <div id="pocket0" class="leftFloat" ></div>
+            <div id="pocket1" class="leftFloat" ></div>
+            <div id="calculatePreFlop" class="noShow" >
+                <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculatePreFlop()"/>
+            </div>
+            <div id="percentajesPreFlop" class="noShow leftFloat" ></div>
+            <div id="goFlop" class="noShow leftFloat" >
+                <input class="buttonDo" id="buttonGoFlop" type="button" value="Go to Flop!" onclick="goToPhase('flop')"/>
+            </div>
+        </div><!-- preFlopDiv -->
+
+  <script src="./javascript/jquery-1.5.2.min.js" type="text/javascript"></script>
+  <script src="./javascript/percentajesPreFlop.js" type="text/javascript"></script>
+  <script src="./javascript/script.js" type="text/javascript"></script>
+  <script src="./javascript/add2home.js" type="text/javascript"></script>
+</body> 
+</html>
