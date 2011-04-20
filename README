@@ -1,0 +1,43 @@
+
+////////////////////////////////////
+//////////// DESCRIPTION
+
+This application is intended to guide people to decide when to bet.
+
+It's far from being perfect and sometimes it misses the shot, but it helps telling when to bet and when to stay safe.
+
+This app has been prepared to be usable from mobile phones. In fact it works pretty well on iPhones, but the horizontal sliding is a problem on android devices so, right now only desktop browsers and iPhones (also iPads and iPod touchs) can use it.
+
+
+////////////////////////////////////
+//////////// LANGUAGES
+
+Right now this application only supports english and spanish languages, but including new languages shouldn't be a problem.
+
+The only addition that has to be done is on the file:
+/javascript/script.js
+
+Adding the new language on the appropiate variable
+var msg = {
+
+And allowing to set the language from options menu:
+setLanguage(language)
+
+
+////////////////////////////////////
+///////////// HOW TO USE IT
+
+You are supposed to be playing against some opponents, and you have to choose the cards that are being revealed to get the proper percentages of victory
+
+
+////////////////////////////////////
+//////////// DETAILS
+
+This application uses HTML5 and cache storage, so it can be used offline and emulates the behaviour of a native app on iPhones.
+
+
+////////////////////////////////////
+///////////// IMPROVEMENTS
+
+See "TODO" file for further details.
+- Horizontal scrolling
