@@ -35,9 +35,3 @@ You are supposed to be playing against some opponents, and you have to choose th
 
 This application uses HTML5 and cache storage, so it can be used offline and emulates the behaviour of a native app on iPhones.
 
-
-////////////////////////////////////
-///////////// IMPROVEMENTS
-
-See "TODO" file for further details.
-- Horizontal scrolling

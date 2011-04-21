@@ -271,9 +271,9 @@ body{
     width:1090px; /* Full imagen length */
 }
 .scroller {
-    width: 100%;
-    overflow-x: visible; /* Just scroll horizontally */
-    overflow-y: hidden;
+/* Just scroll horizontally */
+/*    overflow-x: visible; */
+/*    overflow-y: hidden; */
 }
 
 .cleaner {
@@ -304,6 +304,26 @@ body{
     font-style: italic;
     font-size:90%;
     color:#5A94E6;
+}
+
+/* Only show this slider if the viewport is not wide enought (<1092px) */
+#roundedSlider {
+    background:#444;
+    width:220px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding:30px;
+    padding-top:10px;
+    margin:auto;
+    display:none;
+}
+
+#smallDevicesText{
+    color:white;
+    font-weight:bold;
+    font-size:14px;
+    text-align:center;
 }
 
 /***************************

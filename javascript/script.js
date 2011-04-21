@@ -15,9 +15,9 @@ var table = {
 var cards;
 
 var msg = {
-    "en" : {"fold" : "Fold", "dontCall" : "Fold. I don't call", "go" : "Go!", "dunno" : "I don't go.", "percentajeWin" : " Chances to improve my hand: ", "percentajeOponentWin" : " Chances <span class='specialText'>for the oponent</span> to have a good hand: ", "tightPlayer" : "A tight player would say: ", "loosePlayer" : "A loose player would say: ", "StraightFlush" : "Straight flush", "FourOfAKind" : "Four of a kind", "FullHouse" : " Full house", "Flush" : "Flush", "Straight" : "Straight", "ThreeOfAKind" : "Three of a kind", "TwoPair" : "Two pair", "OnePair" : "One pair", "HighCard" : "High card", "currHandGood" : "You've a good hand as you have:", "updateOps":"Update Options!", "calculate":"Calculate!", "goFlop":"Go to Flop!", "goTurn":"Go to Turn!", "goRiver":"Go to River!", "goStart":"Start a new hand!", "myPos":"Your current position (0 = dealer)", "noOps":"Number of oponents", "numberBB":"Number of Big blinds you have", "hideOptions": "Hide options", "showOptions":"Click to show the options menu", "looseModeOff":"Loose mode Off (tight mode):", "looseModeOn":"Loose mode ON:", "choosePocketCards":"Choose your pocket cards", "chooseFlopCards":"Choose flop cards", "chooseTurnCards":"Choose turn card", "chooseRiverCards":"Choose river card", "low":"LOW", "iDeviceScroll":"Use two fingers to scroll within the cards area." },
+    "en" : {"fold" : "Fold", "dontCall" : "Fold. I don't call", "go" : "Go!", "dunno" : "I don't go.", "percentajeWin" : " Chances to improve my hand: ", "percentajeOponentWin" : " Chances <span class='specialText'>for the oponent</span> to have a good hand: ", "tightPlayer" : "A tight player would say: ", "loosePlayer" : "A loose player would say: ", "StraightFlush" : "Straight flush", "FourOfAKind" : "Four of a kind", "FullHouse" : " Full house", "Flush" : "Flush", "Straight" : "Straight", "ThreeOfAKind" : "Three of a kind", "TwoPair" : "Two pair", "OnePair" : "One pair", "HighCard" : "High card", "currHandGood" : "You've a good hand as you have:", "updateOps":"Update Options!", "calculate":"Calculate!", "goFlop":"Go to Flop!", "goTurn":"Go to Turn!", "goRiver":"Go to River!", "goStart":"Start a new hand!", "myPos":"Your current position (0 = dealer)", "noOps":"Number of oponents", "numberBB":"Number of Big blinds you have", "hideOptions": "Hide options", "showOptions":"Click to show the options menu", "looseModeOff":"Loose mode Off (tight mode):", "looseModeOn":"Loose mode ON:", "choosePocketCards":"Choose your pocket cards", "chooseFlopCards":"Choose flop cards", "chooseTurnCards":"Choose turn card", "chooseRiverCards":"Choose river card", "low":"LOW", "iDeviceScroll":"Use two fingers to scroll within the cards area.", "smallDeviceScroll":"Slide to see all cards." },
 
-    "es" : {"fold" : "No voy", "dontCall" : "No veo la apuesta", "go" : "Voy!", "dunno" : "Creo que no voy.", "percentajeWin" : " Posibilidades de mejorar mi mano: ", "percentajeOponentWin" : " Posibilidades de que <span class='specialText'>el oponente(s)</span> tenga una buena mano: ","tightPlayer" : "Un jugador tight diria: ", "loosePlayer" : "Un jugador loose diria: ","StraightFlush" : "Escalera de Color", "FourOfAKind" : "Poker", "FullHouse" : "Full", "Flush" : "Color", "Straight" : "Escalera", "ThreeOfAKind" : "Trio", "TwoPair" : " Dobles parejas", "OnePair" : "Pareja", "HighCard" : "Carta alta", "currHandGood" : "Tienes una buena mano ya que tienes:", "updateOps":"Actualizar las opciones!", "calculate":"Calcular!", "goFlop":"Ir al Flop!", "goTurn":"Ir al Turn!", "goRiver":"Ir al River!", "goStart":"Comenzar una nueva mano!", "myPos":"Tu posicion actual (0 = dealer)", "noOps":"Numero de oponentes", "numberBB":"Numero de Ciegas que tienes", "hideOptions":"Ocultar las opciones", "showOptions":"Haz click para mostrar las opciones", "looseModeOff":"Jugar a lo seguro (solo buenas manos):", "looseModeOn":"Jugar casi cualquier mano:", "choosePocketCards":"Elige las cartas de tu mano", "chooseFlopCards":"Escoge las cartas del flop ", "chooseTurnCards":"Escoge la carta del turn", "chooseRiverCards":"Escoge la carta del river", "low":"BAJO", "iDeviceScroll":"Usa dos dedos para hacer scroll sobre las cartas." }
+    "es" : {"fold" : "No voy", "dontCall" : "No veo la apuesta", "go" : "Voy!", "dunno" : "Creo que no voy.", "percentajeWin" : " Posibilidades de mejorar mi mano: ", "percentajeOponentWin" : " Posibilidades de que <span class='specialText'>el oponente(s)</span> tenga una buena mano: ","tightPlayer" : "Un jugador tight diria: ", "loosePlayer" : "Un jugador loose diria: ","StraightFlush" : "Escalera de Color", "FourOfAKind" : "Poker", "FullHouse" : "Full", "Flush" : "Color", "Straight" : "Escalera", "ThreeOfAKind" : "Trio", "TwoPair" : " Dobles parejas", "OnePair" : "Pareja", "HighCard" : "Carta alta", "currHandGood" : "Tienes una buena mano ya que tienes:", "updateOps":"Actualizar las opciones!", "calculate":"Calcular!", "goFlop":"Ir al Flop!", "goTurn":"Ir al Turn!", "goRiver":"Ir al River!", "goStart":"Comenzar una nueva mano!", "myPos":"Tu posicion actual (0 = dealer)", "noOps":"Numero de oponentes", "numberBB":"Numero de Ciegas que tienes", "hideOptions":"Ocultar las opciones", "showOptions":"Haz click para mostrar las opciones", "looseModeOff":"Jugar a lo seguro (solo buenas manos):", "looseModeOn":"Jugar casi cualquier mano:", "choosePocketCards":"Elige las cartas de tu mano", "chooseFlopCards":"Escoge las cartas del flop ", "chooseTurnCards":"Escoge la carta del turn", "chooseRiverCards":"Escoge la carta del river", "low":"BAJO", "iDeviceScroll":"Usa dos dedos para hacer scroll sobre las cartas.", "smallDeviceScroll":"Desliza para ver todas las cartas." }
 };
 
 // First goes the suit
@@ -78,9 +78,12 @@ function newHand() {
     showMsgLog(msg[lang]["choosePocketCards"]);
 
     var initialMsg = msg[lang]["choosePocketCards"];
+    /*
+    // The sliding issue is now fixed (jQuery UI Slider)
     if ((/iphone|ipod|ipad/gi).test(navigator.platform)) {
         initialMsg += "<br/> <span class='hintText'>" + msg[lang]["iDeviceScroll"] + "</span>";
     }
+    */
     showMsgLog(initialMsg);
 }
 
@@ -148,6 +151,7 @@ function setLanguage(language){
     } else {
         jQuery("#optionsTitle").html(msg[lang]["hideOptions"]);
     }
+    jQuery("#smallDevicesText").html(msg[lang]["smallDeviceScroll"]);
 }
 
 // Updates all options
@@ -1225,5 +1229,145 @@ function storeCard(chosenCard) {
     }
 }
 
-// Starts a new Hand after everything is ready
-jQuery(document).ready(newHand());
+// Slides the cards zone to show the propper cards area
+function slideCards(pos){
+    // Caution I don't need an object but the value
+    var posStr = pos + "";
+    switch(posStr){
+        case "1":
+            display("A");
+            break;
+        case "2":
+            display("K");
+            break;
+        case "3":
+            display("Q");
+            break;
+        case "4":
+            display("J");
+            break;
+        case "5":
+            display("T");
+            break;
+        case "6":
+            display("9");
+            break;
+        case "7":
+            display("8");
+            break;
+        case "8":
+            display("7");
+            break;
+        case "9":
+            display("6");
+            break;
+        case "10":
+            display("5");
+            break;
+        case "11":
+            display("4");
+            break;
+        // This case is not used (the minimum are 3 cards shown)
+        case "12":
+            display("3");
+            break;
+    }
+}
+
+// Displays a card and the next one. Also hides the card above the chosen one
+function display(card){
+    // First hide all cards before my current card
+    var cardsDescending = ["A", "K", "Q", "J", "T", "9", "8", "7", "6", "5", "4", "3", "2"];
+    var i=0;
+    for (; card != cardsDescending[i]; i++) {
+        hideScrollingCards(cardsDescending[i]);
+    }
+    // Then show all the cards up starting on the selected one
+    for (; i < cardsDescending.length; i++) {
+        showScrollingCards(cardsDescending[i]);
+    }
+
+}
+
+// Shows all the scrolling cards
+function showScrollingCards(card) {
+    jQuery("#S"+card).show();
+    jQuery("#H"+card).show();
+    jQuery("#D"+card).show();
+    jQuery("#C"+card).show();
+}
+
+// Hides a card and all the previous ones
+function hideScrollingCards(card) {
+    jQuery("#S"+card).hide();
+    jQuery("#H"+card).hide();
+    jQuery("#D"+card).hide();
+    jQuery("#C"+card).hide();
+}
+
+// Start the slider
+jQuery(function(){
+	// Slider
+	jQuery('#slider').slider({
+        min: 1,
+        max: 11,
+        animate: true,
+        slide: function(event, ui) { 
+            slideCards(ui.value);
+        }
+	});
+});
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//This is to attach mouse events to tap events (for iDevices and Android devices)
+//////////////////////////////////////////////////////////////////////////////////////
+
+// Code from: http://ross.posterous.com/2008/08/19/iphone-touch-events-in-javascript/
+
+function touchHandler(event) {
+    var touches = event.changedTouches,
+        first = touches[0],
+        type = "";
+
+     switch(event.type) {
+        case "touchstart": type = "mousedown"; break;
+        case "touchmove":  type="mousemove"; break;        
+        case "touchend":   type="mouseup"; break;
+        default: return;
+    }
+
+    //initMouseEvent(type, canBubble, cancelable, view, clickCount,
+    //           screenX, screenY, clientX, clientY, ctrlKey,
+    //           altKey, shiftKey, metaKey, button, relatedTarget);
+    
+    var simulatedEvent = document.createEvent("MouseEvent");
+    simulatedEvent.initMouseEvent(type, true, true, window, 1,
+                              first.screenX, first.screenY,
+                              first.clientX, first.clientY, false,
+                              false, false, false, 0/*left*/, null);
+
+    first.target.dispatchEvent(simulatedEvent);
+    event.preventDefault();
+}
+
+// Fixes the slider behaviour attaching touch events to it
+function initSlider() {
+    document.getElementById("roundedSlider").addEventListener("touchstart", touchHandler, true);
+    document.getElementById("roundedSlider").addEventListener("touchmove", touchHandler, true);
+    document.getElementById("roundedSlider").addEventListener("touchend", touchHandler, true);
+    document.getElementById("roundedSlider").addEventListener("touchcancel", touchHandler, true);
+    jQuery("#smallDevicesText").html(msg[lang]["smallDeviceScroll"]);
+}
+
+
+/*********************************************************
+    This is just to start everything after all the load
+*********************************************************/
+
+// Start everything at the end
+jQuery(document).ready(function() {
+    // Starts a new Hand after everything is ready
+    newHand();
+    initSlider();
+});
