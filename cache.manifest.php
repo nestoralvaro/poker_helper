@@ -3,7 +3,7 @@
 ?>
 CACHE MANIFEST
 
-# version0.4
+# version0.5
 
 # Tells the web page to allow it to load anything not found in the cache.
 NETWORK:

@@ -59,9 +59,10 @@
 	<link rel="apple-touch-startup-image" href="./images/iphone/startup.png">
 
     <link href="./css/cards.css" rel="stylesheet" type="text/css"/>
+    <!-- media query for small devices -->
+    <link rel="stylesheet" media="all and (max-device-width: 1092px)" href="./css/smallDevice.css">
     <link href="./css/add2home.css" rel="stylesheet" type="text/css"/>
 	<link type="text/css" href="./css/ui-lightness/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
-	
 	<link rel="shortcut icon" href="./images/favicon.ico" />
 
     <!-- testing -->
@@ -69,7 +70,7 @@
 
     <!-- analytics code -->
     <script type="text/javascript">
-/*
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22646689-1']);
       _gaq.push(['_trackPageview']);
@@ -79,7 +80,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-*/
+
     </script>
     <!-- analytics code -->
 
@@ -150,92 +151,98 @@
             <div id="C3" class="card leftFloat" ></div>
             <div id="C2" class="card leftFloat" ></div>
         </div><!-- suit -->
+
+        <div id="roundedSlider" class="cleaner">
+            <p id="smallDevicesText"></p>
+            <div id="slider"></div>
+        </div><!-- slider -->
+
     </div> <!-- scroller -->
 
-     <br/>
-        <div id="OptionsDiv">
-            <div class="leftFloat settingsImage" onclick="toggleOptions()" ><img src="./images/settings.png" alt="settings" title="settings" /></div>
-            <div id="optionsTitle" onclick="toggleOptions()" class="boldFont">Click to show the options menu</div>
-            <div id="optionsForm" class="noShow cleaner">
-                <div class="leftFloat" id="divMyPos">Your current position (0 = dealer): </div>
-                <div>
-                    <input type="text" id="inputMyPos" name="inputMyPos" placeholder="0" onkeypress="return isNumberKey(event)" size="3" />
-                </div>
-                <div class="leftFloat" id="divNoOps">Number of oponents: </div>
-                <div>
-                    <input type="text" id="inputNumberOps" name="inputNumberOps" placeholder="5" onkeypress="return isNumberKey(event)" size="3" />
-                </div>
-                <div class="leftFloat" id="divNumberBB">Number of Big blinds you have: </div>
-                <div>
-                    <input type="text" id="inputNumberBB" name="inputNumberBB" placeholder="24" onkeypress="return isNumberKey(event)" size="3" />
-                </div>
-                <div><!-- radio buttons start -->
-                    <div class="leftFloat" id="radioLooseModeOff">Loose mode Off (tight mode): </div>
-                    <div>
-                        <input type="radio" name="looseMode" value="false" checked="checked" />
-                    </div>
-                    <div class="leftFloat cleaner" id="radioLooseModeOn">Loose mode ON: </div>
-                    <div> 
-                        <input type="radio" name="looseMode" value="true" /> 
-                    </div>
-                </div><!-- radio buttons end -->
-                <div class="cleaner">
-                    <img src="./images/es.png" alt="es" title="es" onclick="setLanguage('es')"/>
-                    <img src="./images/en.png" alt="en" title="en" onclick="setLanguage('en')"/>
-                </div>
-                <input id="updateOptions" class="buttonDo" type="button" value="Update Options!" onclick="updateOptions()"/>
-            </div>
-        </div><!-- Options -->
+    <div id="OptionsDiv" class="cleaner">
         <br/>
-        <div id="msgLog" class="cleaner">
+        <div class="leftFloat settingsImage" onclick="toggleOptions()" ><img src="./images/settings.png" alt="settings" title="settings" /></div>
+        <div id="optionsTitle" onclick="toggleOptions()" class="boldFont">Click to show the options menu</div>
+        <div id="optionsForm" class="noShow cleaner">
+            <div class="leftFloat" id="divMyPos">Your current position (0 = dealer): </div>
+            <div>
+                <input type="text" id="inputMyPos" name="inputMyPos" placeholder="0" onkeypress="return isNumberKey(event)" size="3" />
+            </div>
+            <div class="leftFloat" id="divNoOps">Number of oponents: </div>
+            <div>
+                <input type="text" id="inputNumberOps" name="inputNumberOps" placeholder="5" onkeypress="return isNumberKey(event)" size="3" />
+            </div>
+            <div class="leftFloat" id="divNumberBB">Number of Big blinds you have: </div>
+            <div>
+                <input type="text" id="inputNumberBB" name="inputNumberBB" placeholder="24" onkeypress="return isNumberKey(event)" size="3" />
+            </div>
+            <div><!-- radio buttons start -->
+                <div class="leftFloat" id="radioLooseModeOff">Loose mode Off (tight mode): </div>
+                <div>
+                    <input type="radio" name="looseMode" value="false" checked="checked" />
+                </div>
+                <div class="leftFloat cleaner" id="radioLooseModeOn">Loose mode ON: </div>
+                <div> 
+                    <input type="radio" name="looseMode" value="true" /> 
+                </div>
+            </div><!-- radio buttons end -->
+            <div class="cleaner">
+                <img src="./images/es.png" alt="es" title="es" onclick="setLanguage('es')"/>
+                <img src="./images/en.png" alt="en" title="en" onclick="setLanguage('en')"/>
+            </div>
+            <input id="updateOptions" class="buttonDo" type="button" value="Update Options!" onclick="updateOptions()"/>
         </div>
-        <br/>
-        <div id="RiverDiv" class="cleaner">
-            <div id="river0" class="leftFloat" ></div>
-            <div id="calculateRiver" class="noShow" >
-                <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateRiver()"/>
-            </div>
-            <div id="percentajesRiver" class="noShow leftFloat" ></div>
-            <div id="goStart" class="noShow leftFloat" >
-                <input class="buttonDo" id="buttonGoStart" type="button" value="Start a new hand!" onclick="goToPhase('preflop')"/>
-            </div>
-        </div><!-- RiverDiv -->
+    </div><!-- Options -->
+    <br/>
+    <div id="msgLog" class="cleaner">
+    </div>
+    <br/>
+    <div id="RiverDiv" class="cleaner">
+        <div id="river0" class="leftFloat" ></div>
+        <div id="calculateRiver" class="noShow" >
+            <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateRiver()"/>
+        </div>
+        <div id="percentajesRiver" class="noShow leftFloat" ></div>
+        <div id="goStart" class="noShow leftFloat" >
+            <input class="buttonDo" id="buttonGoStart" type="button" value="Start a new hand!" onclick="goToPhase('preflop')"/>
+        </div>
+    </div><!-- RiverDiv -->
 
-        <div id="TurnDiv" class="cleaner">
-            <div id="turn0" class="leftFloat" ></div>
-            <div id="calculateTurn" class="noShow" >
-                <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateTurn()"/>
-            </div>
-            <div id="percentajesTurn" class="noShow leftFloat" ></div>
-            <div id="goRiver" class="noShow leftFloat" >
-                <input class="buttonDo" id="buttonGoRiver" type="button" value="Go to River!" onclick="goToPhase('river')"/>
-            </div>
-        </div><!-- TurnDiv -->
+    <div id="TurnDiv" class="cleaner">
+        <div id="turn0" class="leftFloat" ></div>
+        <div id="calculateTurn" class="noShow" >
+            <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateTurn()"/>
+        </div>
+        <div id="percentajesTurn" class="noShow leftFloat" ></div>
+        <div id="goRiver" class="noShow leftFloat" >
+            <input class="buttonDo" id="buttonGoRiver" type="button" value="Go to River!" onclick="goToPhase('river')"/>
+        </div>
+    </div><!-- TurnDiv -->
 
-        <div id="flopDiv" class="cleaner">
-            <div id="flop0" class="leftFloat" ></div>
-            <div id="flop1" class="leftFloat" ></div>
-            <div id="flop2" class="leftFloat" ></div>
-            <div id="calculateFlop" class="noShow" >
-                <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateFlop()"/>
-            </div>
-            <div id="percentajesFlop" class="noShow leftFloat" ></div>
-            <div id="goTurn" class="noShow leftFloat" >
-                <input class="buttonDo" id="buttonGoTurn" type="button" value="Go to Turn!" onclick="goToPhase('turn')"/>
-            </div>
-        </div><!-- flopDiv -->
+    <div id="flopDiv" class="cleaner">
+        <div id="flop0" class="leftFloat" ></div>
+        <div id="flop1" class="leftFloat" ></div>
+        <div id="flop2" class="leftFloat" ></div>
+        <div id="calculateFlop" class="noShow" >
+            <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculateFlop()"/>
+        </div>
+        <div id="percentajesFlop" class="noShow leftFloat" ></div>
+        <div id="goTurn" class="noShow leftFloat" >
+            <input class="buttonDo" id="buttonGoTurn" type="button" value="Go to Turn!" onclick="goToPhase('turn')"/>
+        </div>
+    </div><!-- flopDiv -->
 
-        <div id="preFlopDiv" class="cleaner">
-            <div id="pocket0" class="leftFloat" ></div>
-            <div id="pocket1" class="leftFloat" ></div>
-            <div id="calculatePreFlop" class="noShow" >
-                <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculatePreFlop()"/>
-            </div>
-            <div id="percentajesPreFlop" class="noShow leftFloat" ></div>
-            <div id="goFlop" class="noShow leftFloat" >
-                <input class="buttonDo" id="buttonGoFlop" type="button" value="Go to Flop!" onclick="goToPhase('flop')"/>
-            </div>
-        </div><!-- preFlopDiv -->
+    <div id="preFlopDiv" class="cleaner">
+        <div id="pocket0" class="leftFloat" ></div>
+        <div id="pocket1" class="leftFloat" ></div>
+        <div id="calculatePreFlop" class="noShow" >
+            <input class="buttonCalculate" type="button" value="Calculate!" onclick="calculatePreFlop()"/>
+        </div>
+        <div id="percentajesPreFlop" class="noShow leftFloat" ></div>
+        <div id="goFlop" class="noShow leftFloat" >
+            <input class="buttonDo" id="buttonGoFlop" type="button" value="Go to Flop!" onclick="goToPhase('flop')"/>
+        </div>
+    </div><!-- preFlopDiv -->
 
     <script src="./javascript/jquery-1.5.2.min.js" type="text/javascript"></script>
     <script src="./javascript/jquery-ui-1.8.11.custom.min.js" type="text/javascript"></script>
