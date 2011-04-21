@@ -1353,11 +1353,14 @@ function touchHandler(event) {
 
 // Fixes the slider behaviour attaching touch events to it
 function initSlider() {
-    document.getElementById("roundedSlider").addEventListener("touchstart", touchHandler, true);
-    document.getElementById("roundedSlider").addEventListener("touchmove", touchHandler, true);
-    document.getElementById("roundedSlider").addEventListener("touchend", touchHandler, true);
-    document.getElementById("roundedSlider").addEventListener("touchcancel", touchHandler, true);
-    jQuery("#smallDevicesText").html(msg[lang]["smallDeviceScroll"]);
+    // Just in case the element is shown
+    if (document.getElementById("roundedSlider")) {
+        document.getElementById("roundedSlider").addEventListener("touchstart", touchHandler, true);
+        document.getElementById("roundedSlider").addEventListener("touchmove", touchHandler, true);
+        document.getElementById("roundedSlider").addEventListener("touchend", touchHandler, true);
+        document.getElementById("roundedSlider").addEventListener("touchcancel", touchHandler, true);
+        jQuery("#smallDevicesText").html(msg[lang]["smallDeviceScroll"]);
+    }
 }
 
 
