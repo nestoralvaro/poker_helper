@@ -1,0 +1,5 @@
+/* Only show this slider if the viewport is not wide enought (<1092px) */
+#roundedSlider {
+    display:block;
+}
+
