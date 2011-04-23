@@ -3,7 +3,7 @@
 ?>
 CACHE MANIFEST
 
-# version0.6
+# version0.7
 
 # Tells the web page to allow it to load anything not found in the cache.
 NETWORK:
@@ -27,11 +27,11 @@ css/ui-lightness/images/ui-icons_222222_256x240.png
 css/ui-lightness/images/ui-icons_ef8c08_256x240.png
 css/ui-lightness/images/ui-icons_ffd27a_256x240.png
 css/ui-lightness/images/ui-icons_ffffff_256x240.png
-images/iphone/favicon.ico
 images/iphone/startup.png
 images/iphone/touch-icon-ipad.png
 images/iphone/touch-icon-iphone.png
 images/iphone/touch-icon-iphone4.png
+images/favicon.ico
 images/background.png
 images/cards.png
 images/en.png
